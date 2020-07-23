@@ -1,4 +1,4 @@
 FROM ubuntu
-RUN apt update
-RUN apt install httpd
+RUN apt update -y
+RUN apt install httpd -y
 CMD [/usr/abin/httpd,"-D"]
